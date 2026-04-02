@@ -1,6 +1,6 @@
 class Customer:
     # Cette classe représente un client à livrer
-    def __init__(self, customer_id, x, y, demand, ready_time, due_time, service_time=0):
+    def __init__(self, customer_id, x, y, demand, ready_time, due_time, service_time=2):
         # Identifiant unique du client
         self.id = customer_id
 

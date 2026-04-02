@@ -7,7 +7,7 @@ def test_parser():
     parser = Parser()
 
     # Lecture du fichier CSV
-    instance = parser.parse("data/dataset.csv", vehicle_capacity=200, max_vehicles=25)
+    instance = parser.parse("data/R101.csv", vehicle_capacity=200, max_vehicles=25)
 
     # Affichage visuel
     print("=== TEST PARSER ===")
@@ -34,7 +34,7 @@ def test_distance_service():
     parser = Parser()
 
     # Lecture du fichier CSV
-    instance = parser.parse("data/dataset.csv", vehicle_capacity=200, max_vehicles=25)
+    instance = parser.parse("data/data/R101.csv", vehicle_capacity=200, max_vehicles=25)
 
     # Construction de la matrice des distances
     DistanceService.build_distance_matrix(instance)

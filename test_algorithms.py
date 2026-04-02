@@ -7,7 +7,7 @@ from src.models.solution import Solution
 
 def test_base_solver():
     parser = Parser()
-    instance = parser.parse("data/dataset.csv", vehicle_capacity=200, max_vehicles=25)
+    instance = parser.parse("data/R101.csv.csv", vehicle_capacity=200, max_vehicles=25)
 
     solver = BaseSolver(instance)
 
@@ -29,7 +29,7 @@ def test_base_solver():
 
 def test_solomon_solver():
     parser = Parser()
-    instance = parser.parse("data/dataset.csv", vehicle_capacity=200, max_vehicles=25)
+    instance = parser.parse("data/R101.csv", vehicle_capacity=200, max_vehicles=25)
 
     DistanceService.build_distance_matrix(instance)
 
